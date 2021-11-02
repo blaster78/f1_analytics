@@ -36,6 +36,6 @@ models:
   f1_analytics:
     marts: 
         core: 
-        +materilized: table
+        +materilized: ephemeral
     staging:
     +materilized: view
