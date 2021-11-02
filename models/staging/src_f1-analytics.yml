@@ -1,8 +1,0 @@
-version: 2
-
-sources: 
-  - name: f1_analytics
-    database: f1-analytics-328910
-    tables:
-      - name: tbl_races
-    

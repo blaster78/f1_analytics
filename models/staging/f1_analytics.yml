@@ -1,0 +1,33 @@
+version: 2
+
+sources: 
+  - name: f1_analytics
+    description: Formula 1 data from Kaggle
+    database: f1-analytics-328910
+    tables:
+      - name: tbl_races
+        description: Raw race data
+        columns:
+          - name: raceid
+            description: Primary key for races
+            tests:
+              - unique
+              - not_null
+      - name: tbl_constructor_standings
+      - name: tbl_constructors
+      - name: tbl_drivers
+      - name: tbl_seasons
+      - name: tbl_circuits
+      - name: tbl_constructor_results
+      - name: tbl_results
+      - name: tbl_status
+
+models:
+  - name: stg_races
+    description: Reorganised race data, one unique race per row
+    columns:
+      - name: date_of_race
+        description: Date the race was run
+        tests:
+        - not_null 
+      
