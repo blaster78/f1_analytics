@@ -26,8 +26,28 @@ models:
   - name: stg_races
     description: Reorganised race data, one unique race per row
     columns:
+      - name: raceid
+        description: primary key for races
+        tests:
+          - not_null
+          - unique
       - name: date_of_race
         description: Date the race was run
         tests:
         - not_null 
+  - name: races
+    description: races, the results and whether we attended in person
+    columns:
+      - name: date_of_race
+        description: the date of the race
+      - name: name_of_race
+        description: the race name
+      - name: winning_constructor
+        description: which constructor won the race, "Not yet raced" if the race hasn't taken place yet
+      - name: winning_driver
+        description: concatenation of first and last name of the winning driver, "Not yet raced" if the race hasn't taken place yet
+      - name: watched_live
+        description: did we go and watch the race in person, "Yes" if affirmative
+
+
       

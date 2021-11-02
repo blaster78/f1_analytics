@@ -1,0 +1,15 @@
+version : 2
+
+seeds:
+  - name: race_attendance
+    description: a manual record of races we've been to
+    columns:
+      - name: raceid
+        description: primary key for race attendance records
+        tests:
+          - unique
+          - not_null
+      - name: watched_live
+        description: y if we were at the race
+        tests:
+          - not_null
