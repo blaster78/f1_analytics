@@ -48,6 +48,16 @@ models:
         description: concatenation of first and last name of the winning driver, "Not yet raced" if the race hasn't taken place yet
       - name: watched_live
         description: did we go and watch the race in person, "Yes" if affirmative
-
+  - name: driver_standings
+    description: historical driver totals
+    columns:
+      - name: driver_name
+        description: name of the driver
+      - name: wins
+        description: total number of wins in career
+      - name: total_points
+        description: total number of points accrued in career
+      - name: total_poles
+        descrption: total number of pole poisitions in career
 
       
