@@ -21,3 +21,5 @@ seeds:
         tests:
           - unique
           - not_null
+      - name: circuit_image_url
+        description: url for the circuit image from wikipedia
