@@ -14,7 +14,7 @@ seeds:
         tests:
           - not_null
           - accepted_values:
-              values: ['Y']
+              values: ['y']
   - name: circuit_extended
     decription: urls for the circuit images from wikipedia
     columns:

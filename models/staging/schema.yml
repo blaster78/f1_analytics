@@ -61,5 +61,8 @@ models:
         descrption: total number of pole poisitions in career
   - name: race_info
     description: information for single races
-
+  - name: winning_times
+    description: winning total time at a race
+  - name: fastest_times
+    description: fastest total time ever at a circuit
       
