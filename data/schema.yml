@@ -13,10 +13,12 @@ seeds:
         description: y if we were at the race
         tests:
           - not_null
-  - name: circuit_image
+          - accepted_values:
+              values: ['Y']
+  - name: circuit_extended
     decription: urls for the circuit images from wikipedia
     columns:
-      - name: raceid
+      - name: circuitid
         description: primary key for circuit images
         tests:
           - unique

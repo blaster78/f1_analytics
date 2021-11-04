@@ -3,7 +3,10 @@ with circuits as (
     select circuitid,
     name as circuit_name,
     location as circuit_location,
-    country as circuit_country From
+    country as circuit_country
+    ,lat
+    ,lng
+     From
 
   {{ source("f1_analytics","tbl_circuits")}}
 

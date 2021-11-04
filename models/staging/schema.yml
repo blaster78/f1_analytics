@@ -59,5 +59,7 @@ models:
         description: total number of points accrued in career
       - name: total_poles
         descrption: total number of pole poisitions in career
+  - name: race_info
+    description: information for single races
 
       
